@@ -16,13 +16,12 @@ def canUnlockAll(boxes):
     if not boxes or type(boxes) is not list:
         return False
 
-    unlocked = [0]  # Keep track of the unlocked boxes
+    unlocked = [0]  
     for box in unlocked:
         for key in boxes[box]:
-            # Check if the key corresponds to a box that hasn't been unlocked yet
             if key not in unlocked and key < len(boxes):
-                unlocked.append(key)  # Unlock the box by adding it to the unlocked list
+                unlocked.append(key) 
 
     if len(unlocked) == len(boxes):
-        return True  # All boxes have been unlocked
-    return False  # Some boxes remain locked
+        return True 
+    return False  
