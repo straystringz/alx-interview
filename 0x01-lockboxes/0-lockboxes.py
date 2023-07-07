@@ -6,14 +6,14 @@ and each box may contain keys to the other boxes.
 """
 
 
-def can_unlock_all(boxes):
+def canUnlockAll(boxes):
     """
     Determines if all the boxes can be opened.
 
     :param boxes: A list of lists representing the boxes and their keys.
     :return: True if all boxes can be opened, False otherwise.
     """
-    if not boxes or not isinstance(boxes, list):
+    if not boxes or type(boxes) is not list:
         return False
 
     unlocked = [0]  # Keep track of the unlocked boxes
