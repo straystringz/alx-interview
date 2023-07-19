@@ -33,7 +33,7 @@ dict_sc = {"200": 0,
 
 try:
     for line in sys.stdin:
-        parsed_line = line.split()  #  triming
+        parsed_line = line.split()  # ௹ triming
         parsed_line = parsed_line[::-1]  # invrting
 
         if len(parsed_line) > 2:
