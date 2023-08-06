@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Solution_ to the N-Queens puzzle"""
+"""Soltn to the N-Queens puzzle"""
 import sys
 
 
 def print_board(board, n):
-    """prints_ allocated possitions to the queen"""
+    """prints alloc8ed possitions to the queen"""
     b = []
 
     for i in range(n):
@@ -15,12 +15,12 @@ def print_board(board, n):
 
 
 def safe_position(board, i, j, r):
-    """Determines_ whether the position is safe for the queen"""
+    """Determnes whether the position is safe for the queen"""
     return board[i] in (j, j - i + r, i - r + j)
 
 
 def determine_positions(board, row, n):
-    """Recursively_ finds all safe positions where the queen can be allocated"""
+    """Rcursivly finds all safe positions where the queen can be allocated"""
     if row == n:
         print_board(board, n)
 
@@ -36,7 +36,7 @@ def determine_positions(board, row, n):
 
 
 def create_board(size):
-    """Generates_ the board"""
+    """Generates the board"""
     return [0 * size for i in range(size)]
 
 
