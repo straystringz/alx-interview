@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""PrimeWinner Game"""
+""" PrimeWinner Game """
 
 def isWinner(x, nums):
     """Func._ that performs prime game"""
